@@ -1,5 +1,0 @@
-/Users/mahd/.emacs.d/elpaca/builds/vterm/build/CMakeFiles/vterm-module.dir
-/Users/mahd/.emacs.d/elpaca/builds/vterm/build/CMakeFiles/libvterm.dir
-/Users/mahd/.emacs.d/elpaca/builds/vterm/build/CMakeFiles/run.dir
-/Users/mahd/.emacs.d/elpaca/builds/vterm/build/CMakeFiles/edit_cache.dir
-/Users/mahd/.emacs.d/elpaca/builds/vterm/build/CMakeFiles/rebuild_cache.dir

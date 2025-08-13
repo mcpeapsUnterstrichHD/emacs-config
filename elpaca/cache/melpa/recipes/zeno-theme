@@ -1,3 +1,0 @@
-(zeno-theme
- :repo "sacredyak/zeno-theme"
- :fetcher github)
