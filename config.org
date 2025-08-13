@@ -24,6 +24,7 @@
   - [[#source-code-block-tag-expansion][Source Code Block Tag Expansion]]
 - [[#reload-emacs][RELOAD EMACS]]
 - [[#sudo-edit][SUDO EDIT]]
+- [[#theme][THEME]]
 - [[#which-key][WHICH-KEY]]
 
 * IMPORTANT PROGRAMS TO LOAD FIRST
@@ -301,6 +302,15 @@ This is just an example of how to create a simple function in Emacs.  Use this f
     (mahd/leader-keys
       "fu" '(sudo-edit-find-file :wk "Sudo find file")
       "fU" '(sudo-edit :wk "Sudo edit file")))
+#+end_src
+
+
+* THEME
+The first of the two lines below designates the directory where will place all of our themes.  The second line loads our chosen theme which is *dtmacs*, a theme that I created with the help of the [[https://emacsfodder.github.io/emacs-theme-editor/][Emacs Theme Editor]].
+
+#+begin_src emacs-lisp
+(add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")
+(load-theme 'nord t)
 #+end_src
 
 

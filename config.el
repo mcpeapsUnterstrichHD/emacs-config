@@ -187,6 +187,9 @@
       "fu" '(sudo-edit-find-file :wk "Sudo find file")
       "fU" '(sudo-edit :wk "Sudo edit file")))
 
+(add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")
+(load-theme 'nord t)
+
 (use-package which-key
   :init
     (which-key-mode 1)
