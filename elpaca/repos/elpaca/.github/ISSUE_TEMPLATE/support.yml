@@ -1,0 +1,41 @@
+name: Bug and/or Support Request
+description: Use this if you need help using Elpaca or have found a bug (after reading the documentation)
+title: "[Bug/Support]:"
+body:
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      description: Please ensure you have read the documentation (including command/function docstrings), searched previous issues (open and closed) on the github issue  tracker,  and checked the github wiki before creating a support ticket. 
+      options:
+        - label: I have checked the documentation (README, Wiki, docstrings, etc)
+          required: true
+        - label: I am  checking these without reading them.
+          required: false
+        - label: I have searched previous issues to see if my question is a duplicate.
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out a report.
+        Please keep reports focused to a single issue and provide all the requested details.
+  - type: textarea
+    id: elpaca-version
+    attributes:
+      label: Elpaca Version
+      description: Output of the elpaca-version command (M-x elpaca-version, then copy the result from the *Messages* buffer)
+      placeholder: Please include the output of the elpaca-version command (M-x elpaca-version)
+    validations:
+      required: true
+  - type: textarea
+    id: operating-system
+    attributes:
+      label: Operating System
+      description: What operating system are you using Emacs on?
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please be as specific as possible. Include examples if possible. If the issue concerns a single package, include the output of M-x elpaca-info for that package. Please do not share a screenshot where text will do.
